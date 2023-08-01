@@ -1,0 +1,561 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Lora';
+  line-height: 1.5;
+  background-color: #f1f1f1;
+  overflow: auto;
+  width: 100%;
+}
+
+header {
+  margin: auto;
+  color: #000000;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 30px;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 75px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+}
+
+nav ul li:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid red;
+  font-size: 14px;
+  width: 175px;
+}
+
+.dropdown-menu ul {
+  width: 200px;
+  padding: 10px;
+}
+
+.dropdown-menu ul li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sponsor-button {
+  background-color: rgb(255, 70, 70);
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner1 {
+  margin: auto;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100% !important;
+}
+
+.banner2 {
+  margin: auto;
+  max-width: 100%;
+}
+
+
+.about-us-header {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.about-us-content {
+  max-width: 40%;
+  text-align: center;
+  max-width: 725px;
+}
+
+.about-us-content-2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer {
+  margin: auto;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  height: 275px;
+  max-width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.footer-container {
+  border-bottom: white 1px solid;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer-left-section {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left-section img {
+  width: 75px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-left-section text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-contact-info-container {
+  margin: auto;
+  position: absolute;
+  max-width: 500px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .footer-container .footer-right-section {
+  padding: 20px 20px;
+}
+
+footer .footer-container .footer-right-section button{
+  border-radius: 70%;
+  background-color: black;
+  color: white;
+  border: gray 2px solid;
+  width: 50px;
+  height: 50px;
+}
+
+.home-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.home-heading, .home-heading2 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.home-heading2 {
+  padding-top: 0px;
+} 
+
+.home-section-1, .home-section-2, .home-section-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.home-img-1-label, .home-img-2-label, .home-img-3-label {
+  max-width: 250px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-img-1-label-heading, .home-img-2-label-heading, .home-img-3-label-heading {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.home-img-1-label-description, .home-img-2-label-description, .home-img-3-label-description {
+  font-size: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home-section-1 a {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+.home-section-2 a {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+.home-section-3 a {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+.contact-us-heading-container {
+  max-width: 1152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-us-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-us-container {
+  padding-bottom: 50px;
+  margin: auto;
+  max-width: 1152px; 
+}
+
+.contact-us-box {
+  max-width: 1152px;
+  display: flex;
+  max-height: 665px;
+  border: 1px solid black;
+}
+
+.contact-us-box img {
+  height: 100%;
+}
+
+.contact-us-form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-us-form-labels {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-right: 10px;
+}
+
+.contact-us-form-labels label{
+  max-height: 24px;
+}
+
+.contact-us-form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-us-form-inputs textarea{
+  resize: none;
+  max-width: 177.5px;
+}
+
+.contact-us-form-section {
+  padding-bottom: 30px;
+}
+
+.security-number-display-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.security-number-display-container label {
+  padding-right: 60px;
+}
+
+#security-number-display {
+  padding: 5px;
+  border: black 1px solid;
+  background-color: #595757;
+  color: white;
+}
+
+#contact-form-submit {
+  margin: 16px, 20px, 16px, 20px;;
+  padding: 10px;
+  max-height: 52px;
+  max-width: 94px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.history-img-1-label-description, .history-img-2-label-description, .history-img-3-label-description {
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.history-section-1, .history-section-2, .history-section-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  justify-content: center;
+}
+
+.committee-container {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.committee-box {
+  max-width: 1152px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
+.committee-position-container {
+  padding-left: 50px;
+  padding-right: 150px;
+}
+
+.committee-closer {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.committee-container a {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.contact-us-information {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact-us-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.contact-us-address, .contact-us-phone-number, .contact-us-fax-number {
+  font-size: 12px;
+}
+
+.registration-container {
+  max-width: 1142.73px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.registration-general-team-information, .registration-team-manager, .regsitration-team-captain, .registration-cocaptain {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-general-team-information-heading, .registration-team-captain-heading, .registration-team-manager-heading, .registration-cocaptain-heading {
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 10px;
+border-bottom: solid black 1px;
+display: flex;
+}
+
+.registration-general-team-information-form, .registration-team-manager-form, .registration-team-captain-form, .registration-cocaptain-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.registration-team-manager-inputs, .registration-general-team-information-inputs, .registration-team-captain-inputs, .registration-cocaptain-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding-top: 5px;
+}
+
+.registration-container input, select {
+  margin-bottom: 3px;
+}
+
+.registration-container img {
+  padding-bottom: 10px;
+}
+
+.registration-general-team-information-labels{
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+.registration-team-manager-labels, .registration-team-captain-labels, .registration-cocaptain-labels {
+  display: flex;
+  flex-direction: column;
+  padding-right: 115px;
+  max-width: 400px;
+}
+
+.registration-sections-container {
+  border: solid black 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.registration-heading {
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 954px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.instructions-container img {
+  padding-bottom: 50px;
+}
+
+.Instructions-Bold {
+  font-weight: bold;
+}
+
+.highlights-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1142.73px;
+}
+
+@media (max-width: 768px) {
+
+  .left-section {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .sponsor-button {
+    margin-top: 10px;
+  }
+
+  .about-us-header {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}

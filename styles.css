@@ -1,5 +1,14 @@
 /* Reset some default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -24,6 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .left-section {
@@ -35,6 +45,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: right;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -73,7 +84,7 @@ nav ul li a {
   display: flex;
 }
 
-nav ul li:hover > .dropdown-menu {
+nav ul li:hover>.dropdown-menu {
   display: block;
 }
 
@@ -87,6 +98,7 @@ nav ul li:hover > .dropdown-menu {
   border: 2px solid red;
   font-size: 14px;
   width: 175px;
+  z-index: 3;
 }
 
 .dropdown-menu ul {
@@ -204,7 +216,7 @@ footer .footer-container .footer-right-section {
   padding: 20px 20px;
 }
 
-footer .footer-container .footer-right-section button{
+footer .footer-container .footer-right-section button {
   border-radius: 70%;
   background-color: black;
   color: white;
@@ -222,7 +234,8 @@ footer .footer-container .footer-right-section button{
   padding-bottom: 50px;
 }
 
-.home-heading, .home-heading2 {
+.home-heading,
+.home-heading2 {
   padding-top: 20px;
   font-weight: bold;
   font-size: 24px;
@@ -230,9 +243,11 @@ footer .footer-container .footer-right-section button{
 
 .home-heading2 {
   padding-top: 0px;
-} 
+}
 
-.home-section-1, .home-section-2, .home-section-3 {
+.home-section-1,
+.home-section-2,
+.home-section-3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -241,19 +256,25 @@ footer .footer-container .footer-right-section button{
   text-align: left;
 }
 
-.home-img-1-label, .home-img-2-label, .home-img-3-label {
+.home-img-1-label,
+.home-img-2-label,
+.home-img-3-label {
   max-width: 250px;
   padding: 50px;
   display: flex;
   flex-direction: column;
 }
 
-.home-img-1-label-heading, .home-img-2-label-heading, .home-img-3-label-heading {
+.home-img-1-label-heading,
+.home-img-2-label-heading,
+.home-img-3-label-heading {
   font-weight: bold;
   font-size: 24px;
 }
 
-.home-img-1-label-description, .home-img-2-label-description, .home-img-3-label-description {
+.home-img-1-label-description,
+.home-img-2-label-description,
+.home-img-3-label-description {
   font-size: 11px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -300,7 +321,7 @@ footer .footer-container .footer-right-section button{
 .contact-us-container {
   padding-bottom: 50px;
   margin: auto;
-  max-width: 1152px; 
+  max-width: 1152px;
 }
 
 .contact-us-box {
@@ -333,7 +354,7 @@ footer .footer-container .footer-right-section button{
   padding-right: 10px;
 }
 
-.contact-us-form-labels label{
+.contact-us-form-labels label {
   max-height: 24px;
 }
 
@@ -342,7 +363,7 @@ footer .footer-container .footer-right-section button{
   flex-direction: row;
 }
 
-.contact-us-form-inputs textarea{
+.contact-us-form-inputs textarea {
   resize: none;
   max-width: 177.5px;
 }
@@ -370,7 +391,8 @@ footer .footer-container .footer-right-section button{
 }
 
 #contact-form-submit {
-  margin: 16px, 20px, 16px, 20px;;
+  margin: 16px, 20px, 16px, 20px;
+  ;
   padding: 10px;
   max-height: 52px;
   max-width: 94px;
@@ -379,13 +401,17 @@ footer .footer-container .footer-right-section button{
   border-radius: 10px;
 }
 
-.history-img-1-label-description, .history-img-2-label-description, .history-img-3-label-description {
+.history-img-1-label-description,
+.history-img-2-label-description,
+.history-img-3-label-description {
   font-size: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.history-section-1, .history-section-2, .history-section-3 {
+.history-section-1,
+.history-section-2,
+.history-section-3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -444,7 +470,9 @@ footer .footer-container .footer-right-section button{
   font-size: 24px;
 }
 
-.contact-us-address, .contact-us-phone-number, .contact-us-fax-number {
+.contact-us-address,
+.contact-us-phone-number,
+.contact-us-fax-number {
   font-size: 12px;
 }
 
@@ -455,34 +483,47 @@ footer .footer-container .footer-right-section button{
   padding-bottom: 100px;
 }
 
-.registration-general-team-information, .registration-team-manager, .regsitration-team-captain, .registration-cocaptain {
+.registration-general-team-information,
+.registration-team-manager,
+.regsitration-team-captain,
+.registration-cocaptain {
   display: flex;
   flex-direction: column;
 }
 
-.registration-general-team-information-heading, .registration-team-captain-heading, .registration-team-manager-heading, .registration-cocaptain-heading {
-font-weight: bold;
-padding-bottom: 10px;
-padding-top: 10px;
-border-bottom: solid black 1px;
-display: flex;
+.registration-general-team-information-heading,
+.registration-team-captain-heading,
+.registration-team-manager-heading,
+.registration-cocaptain-heading {
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: solid black 1px;
+  display: flex;
 }
 
-.registration-general-team-information-form, .registration-team-manager-form, .registration-team-captain-form, .registration-cocaptain-form {
+.registration-general-team-information-form,
+.registration-team-manager-form,
+.registration-team-captain-form,
+.registration-cocaptain-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 10px;
 }
 
-.registration-team-manager-inputs, .registration-general-team-information-inputs, .registration-team-captain-inputs, .registration-cocaptain-inputs {
+.registration-team-manager-inputs,
+.registration-general-team-information-inputs,
+.registration-team-captain-inputs,
+.registration-cocaptain-inputs {
   display: flex;
   flex-direction: column;
   width: 350px;
   padding-top: 5px;
 }
 
-.registration-container input, select {
+.registration-container input,
+select {
   margin-bottom: 3px;
 }
 
@@ -490,13 +531,15 @@ display: flex;
   padding-bottom: 10px;
 }
 
-.registration-general-team-information-labels{
+.registration-general-team-information-labels {
   display: flex;
   flex-direction: column;
   padding-right: 100px;
 }
 
-.registration-team-manager-labels, .registration-team-captain-labels, .registration-cocaptain-labels {
+.registration-team-manager-labels,
+.registration-team-captain-labels,
+.registration-cocaptain-labels {
   display: flex;
   flex-direction: column;
   padding-right: 115px;
@@ -534,10 +577,416 @@ display: flex;
   font-weight: bold;
 }
 
+.highlights-heading {
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .highlights-section {
   display: flex;
   flex-direction: column;
   max-width: 1142.73px;
+}
+
+.highlights-section-b {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  max-width: 1142.73px;
+}
+
+.highlights-section-b img {
+  object-fit: cover;
+}
+
+.highlights-section-b span {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.highlights-section-a {
+  display: flex;
+  flex-direction: column;
+  max-width: 1142.73px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.highlights-img-container-a {
+  display: flex;
+  justify-content: center;
+}
+
+.highlights-img-container-a img {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.highlights-section-a img {
+  max-width: 600px;
+}
+
+.highlights-section-d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.highlights-section-d img {
+  max-width: 400px;
+}
+
+.highlights-section-d span {
+  max-width: 954px;
+}
+
+.highlights-section-d-header {
+  font-weight: bold;
+  display: flex;
+  align-content: left;
+  max-width: 954px;
+  width: 100%;
+}
+
+.transportation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.transportation-section {
+  max-width: 1016px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 55px;
+  padding: 35px;
+  align-items: center;
+}
+
+.transportation-section img {
+  max-height: 271px;
+}
+
+.transportation-section-heading {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.transportation-section-contents {
+  display: flex;
+  flex-direction: column;
+  max-width: 1016px;
+  padding: 45px;
+}
+
+.about-festival-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  max-width: 1016px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.schedule-header {
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 40px;
+}
+
+.schedule-container {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  max-width: 954px;
+}
+
+.saturday-schedule-heading,
+.sunday-schedule-heading {
+  text-align: left;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.schedule-content-header {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.saturday-schedule-content,
+.sunday-schedule-content {
+  text-align: left;
+}
+
+.food-content {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.food-header {
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.places-to-stay-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  max-width: 1016px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.places-to-stay-header {
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.places-to-stay-header-description {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.places-to-stay-section {
+  text-align: left;
+  width: 100%;
+}
+
+.places-to-stay-section-header {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.flyers-and-posters-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  max-width: 1139px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.flyers-and-posters-header {
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.flyers-and-posters-header-description {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.flyers-and-posters-section {
+  padding-top: 60px;
+}
+
+.FAQ-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  max-width: 1139px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.FAQ-container p {
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.FAQ-container ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.FAQ-container ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-bottom: 1px dotted #000000;
+}
+
+.FAQ-container ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+
+.FAQ-container ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+
+.FAQ-container ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+.FAQ-container ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+.FAQ-container ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+
+.FAQ-container ul li i:before,
+ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+
+.FAQ-container ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.FAQ-container ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.FAQ-container ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.FAQ-container ul li input[type=checkbox]:checked~p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.news-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-section img {
+  max-height: 361px;
+  max-width: 507px;
+}
+
+.news-section-heading {
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 40px;
+}
+
+.news-section-contents {
+  display: flex;
+  flex-direction: column;
+  max-width: 1016px;
+  padding: 45px;
+  padding-bottom: 60px;
+}
+
+.videos-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  max-width: 1016px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.videos-header {
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.videos-content {
+  text-align: left;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.photo-gallery-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  max-width: 1080px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.photo-gallery-banner-2 {
+  padding-top: 40px;
+}
+
+.photo-gallery-section-header {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 768px) {
